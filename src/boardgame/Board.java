@@ -27,4 +27,13 @@ public class Board {
     public void setLinhaTabuleiro(int linhaTabuleiro) {
         this.linhaTabuleiro = linhaTabuleiro;
     }
+
+    public Piece piece(int coluna,int linha){
+        return pieces[linha][coluna];
+    }
+
+    public Piece piece(Position position){
+        return pieces[position.getLinha()][position.getColuna()];
+    }
+
 }
